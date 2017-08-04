@@ -10,6 +10,11 @@ body {
   box-sizing: border-box;
 }
 
+section{
+  max-width: 100%
+  width: 980px;
+}
+
 
 #logo {
   float: left;
@@ -41,6 +46,8 @@ body {
 }
 
 
+}
+
 #masthead {
   position: fixed;
   z-index: 99;
@@ -59,7 +66,7 @@ body {
 .col-sm-6{
   float: left;
   width: 100%;
-  max-width: 640px;
+  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -68,7 +75,7 @@ body {
 
 .row{
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   clear: both;
 }
@@ -83,7 +90,7 @@ body {
 .col-sm-4{
   float: right;
   width: 100%;
-  max-width: 320px;
+  max-width: 250px;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -96,6 +103,7 @@ body {
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eee;
+  
 }
 
 footer {
@@ -127,3 +135,76 @@ h1 {
 h2,
 h3 {
   font-size: 22px;
+  }
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
